@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.core.env.Environment;
 
 @SpringBootApplication
@@ -13,7 +15,7 @@ public class BootMvc05Application implements CommandLineRunner{
 	public static void main(String[] args) {
 		SpringApplication.run(BootMvc05Application.class, args);
 	}
-	@Override
+		@Override
     public void run(String... args) throws Exception {
         String port = env.getProperty("server.port", "8080");  // Default to 8080 if not defined
         String url = "http://localhost:" + port + "/";
