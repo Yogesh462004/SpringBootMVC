@@ -17,4 +17,5 @@ public class Doctor {
   private Integer did;
   private String dname;
   private Integer dsal;
+  private String country;
 }

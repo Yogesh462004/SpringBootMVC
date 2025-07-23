@@ -23,7 +23,7 @@ public String delete(Integer id) {
 	
 }
 public String edit1(Doctor doc) {
-	repo.save(doc);
+	edit(doc);
 	return "Added SuccessFully";
 }
 }
